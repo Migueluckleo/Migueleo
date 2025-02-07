@@ -11,5 +11,8 @@
   "description": "",
   "devDependencies": {
     "tailwindcss": "^4.0.4"
+  },
+  "dependencies": {
+    "remixicon": "^4.6.0"
   }
 }

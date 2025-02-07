@@ -1,0 +1,25 @@
+<nav class="bg-white border-b-2 border-black h-[80px] flex justify-between items-center md:px-0">
+    <!-- Logo con stroke derecho -->
+    <div class="h-full flex items-center justify-center border-r-2 border-black px-6" style="width: 250px;">
+        <img src="assets/Logo.png" alt="Logo" class="h-[60%]">
+    </div>
+
+    <!-- Menú Desktop (pegado al borde derecho) -->
+    <div class="hidden md:flex space-x-2 h-full ml-auto">
+        <a href="testimonios.html" class="h-full flex items-center px-6 bg-black text-white hover:opacity-80">Testimoniales</a>
+        <a href="portafolio.html" class="h-full flex items-center px-6 bg-black text-white hover:opacity-80">Portafolio</a>
+        <a href="servicios.html" class="h-full flex items-center px-6 bg-black text-white hover:opacity-80">Servicios Freelance</a>
+    </div>
+
+    <!-- Menú Mobile (Icono hamburguesa) -->
+    <button id="menu-toggle" class="md:hidden text-2xl px-6">
+        <i class="ri-menu-line"></i>
+    </button>
+
+    <!-- Menú Mobile desplegable -->
+    <div id="mobile-menu" class="hidden absolute top-[80px] left-0 w-full bg-black flex flex-col">
+        <a href="testimonios.html" class="py-4 px-6 text-white hover:bg-gray-700">Testimoniales</a>
+        <a href="portafolio.html" class="py-4 px-6 text-white hover:bg-gray-700">Portafolio</a>
+        <a href="servicios.html" class="py-4 px-6 text-white hover:bg-gray-700">Servicios Freelance</a>
+    </div>
+</nav>
