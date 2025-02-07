@@ -659,6 +659,26 @@ video {
   margin-top: -2rem;
 }
 
+.-mt-1 {
+  margin-top: -0.25rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.-mt-0 {
+  margin-top: -0px;
+}
+
+.-mt-2 {
+  margin-top: -0.5rem;
+}
+
+.-mt-3 {
+  margin-top: -0.75rem;
+}
+
 .flex {
   display: flex;
 }
@@ -1047,6 +1067,14 @@ video {
   font-size: 48px;
 }
 
+.text-\[24px\] {
+  font-size: 24px;
+}
+
+.text-\[54px\] {
+  font-size: 54px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1132,6 +1160,22 @@ video {
   .sm\:-mt-6 {
     margin-top: -1.5rem;
   }
+
+  .sm\:-mt-4 {
+    margin-top: -1rem;
+  }
+
+  .sm\:-mt-3 {
+    margin-top: -0.75rem;
+  }
+
+  .sm\:text-\[24px\] {
+    font-size: 24px;
+  }
+
+  .sm\:text-\[48px\] {
+    font-size: 48px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1153,6 +1197,10 @@ video {
 
   .md\:-mt-2 {
     margin-top: -0.5rem;
+  }
+
+  .md\:-mt-0 {
+    margin-top: -0px;
   }
 
   .md\:block {
@@ -1272,11 +1320,27 @@ video {
   .md\:text-\[400px\] {
     font-size: 400px;
   }
+
+  .md\:text-\[80px\] {
+    font-size: 80px;
+  }
+
+  .md\:text-\[40px\] {
+    font-size: 40px;
+  }
 }
 
 @media (min-width: 1024px) {
   .lg\:-mt-6 {
     margin-top: -1.5rem;
+  }
+
+  .lg\:-mt-3 {
+    margin-top: -0.75rem;
+  }
+
+  .lg\:-mt-4 {
+    margin-top: -1rem;
   }
 
   .lg\:text-\[120px\] {
@@ -1285,5 +1349,53 @@ video {
 
   .lg\:text-\[60px\] {
     font-size: 60px;
+  }
+
+  .lg\:text-\[40px\] {
+    font-size: 40px;
+  }
+
+  .lg\:text-\[200px\] {
+    font-size: 200px;
+  }
+
+  .lg\:text-\[100px\] {
+    font-size: 100px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:text-\[100px\] {
+    font-size: 100px;
+  }
+
+  .xl\:text-\[200px\] {
+    font-size: 200px;
+  }
+
+  .xl\:text-\[150px\] {
+    font-size: 150px;
+  }
+
+  .xl\:text-\[60px\] {
+    font-size: 60px;
+  }
+
+  .xl\:text-\[100\] {
+    color: 100;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:text-\[150px\] {
+    font-size: 150px;
+  }
+
+  .\32xl\:text-\[80px\] {
+    font-size: 80px;
+  }
+
+  .\32xl\:text-\[150\] {
+    color: 150;
   }
 }
