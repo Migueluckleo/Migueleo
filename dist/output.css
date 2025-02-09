@@ -705,6 +705,10 @@ video {
   height: 450px;
 }
 
+.h-\[470px\] {
+  height: 470px;
+}
+
 .max-h-\[300px\] {
   max-height: 300px;
 }
