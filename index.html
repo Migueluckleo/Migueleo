@@ -6,32 +6,29 @@
     <title>Proyecto Tailwind</title>
     <link href="./dist/output.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
-
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
-<body class="font-['Space_Grotesk'] bg-gray-100 flex flex-col min-h-screen ">
-    <section class="h-screen w-full bg-gray-100">
-        <div class="relative flex h-full ">
-          <div class="animate-blob absolute left-28 h-80 w-80 rounded-full bg-[#9675d0] opacity-40 blur-xl filter mix-blend-multiply"></div>
-          <div class="animate-blob absolute right-28 h-80 w-80 rounded-full bg-[#fdcb6b] opacity-40 blur-xl filter mix-blend-multiply"></div>
-          <div class="animate-blob absolute bottom-40 h-80 w-80 rounded-full bg-[#7ecbf1] opacity-40 blur-xl filter mix-blend-multiply"></div>
-           <!-- Contenedor principal -->
-    <div class=" lg:max-w-[1920px] w-full min-h-[650px] px-6 md:px-20 py-4 mx-auto flex flex-col items-start gap-0">
-        <p class="text-[24px] md:text-[40px] lg:text-[60px] xl:text-[60px] 2xl:text-[80px] font-light font-[Space_Grotesk]">UX UI Designer</p>
-        <p class="text-[24px] md:text-[40px] lg:text-[60px] xl:text-[60px] 2xl:text-[80px] font-light font-[Space_Grotesk] -mt-2  sm:-mt-2 md:-mt-1 lg:-mt-6">Product Designer</p>
-        <p class="text-[54px] md:text-[80px] lg:text-[100px] xl:text-[100px] 2xl:text-[150px] font-bold font-[Space_Grotesk] -mt-4 sm:-mt-3 md:-mt-2 lg:-mt-4">Miguel Leo</p>
-        <button class="bg-white text-black border-2 border-black px-6 py-3 flex items-center gap-2 font-bold mt-6 hover:bg-gray-200 transition">
-    Conoce más
-    <i class="ri-arrow-right-line text-lg"></i>
-</button>
-<p class="w-full md:w-1/2 mt-20 text-[16px] lg:text-[24px] font-medium font-[Space_Grotesk] ">Impulsando la creación de experiencias de usuario excepcionales mediante estrategias de UX efectivas</p>
-    </div>
-        </div>
-      </section>
+<body class="font-['Space_Grotesk'] bg-gray-100 flex flex-col min-h-screen">
+    <section class="relative h-screen w-full bg-gray-100 overflow-hidden">
+        <!-- Círculos flotantes -->
+        <div id="blob1" class="blob absolute h-[150px] w-[150px] md:h-[350px] md:w-[350px] rounded-full bg-[#9675d0] opacity-100 blur-xl filter mix-blend-multiply animation-delay-2000"></div>
+        <div id="blob2" class="blob absolute h-[150px] w-[150px] md:h-[300px] md:w-[300px] rounded-full bg-[#fdcb6b] opacity-100 blur-xl filter mix-blend-multiply animation-delay-4000"></div>
+        <div id="blob3" class="blob absolute h-[150px] w-[150px] md:h-[250px] md:w-[250px] rounded-full bg-[#7ecbf1] opacity-100 blur-xl filter mix-blend-multiply"></div>
 
-   
+        <!-- Contenido principal -->
+        <div class="lg:max-w-[1920px] w-full min-h-[650px] px-6 md:px-20 py-4 mx-auto flex flex-col items-start gap-0">
+            <p class="text-[24px] md:text-[40px] lg:text-[60px] xl:text-[60px] 2xl:text-[80px] font-light font-[Space_Grotesk]">UX UI Designer</p>
+            <p class="text-[24px] md:text-[40px] lg:text-[60px] xl:text-[60px] 2xl:text-[80px] font-light font-[Space_Grotesk] -mt-2 sm:-mt-2 md:-mt-1 lg:-mt-6">Product Designer</p>
+            <p class="text-[54px] md:text-[80px] lg:text-[100px] xl:text-[100px] 2xl:text-[150px] font-bold font-[Space_Grotesk] -mt-4 sm:-mt-3 md:-mt-2 lg:-mt-4">Miguel Leo</p>
+            <button class="bg-white text-black border-2 border-black px-6 py-3 flex items-center gap-2 font-bold mt-6 hover:bg-gray-200 transition">
+                Conoce más <i class="ri-arrow-right-line text-lg"></i>
+            </button>
+            <p class="w-full md:w-1/2 mt-20 text-[16px] lg:text-[24px] font-medium font-[Space_Grotesk]">
+                Impulsando la creación de experiencias de usuario excepcionales mediante estrategias de UX efectivas
+            </p>
+        </div>
+    </section>
 
     <script src="js/scripts.js" defer></script>
-
 </body>
 </html>

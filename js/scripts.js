@@ -31,3 +31,26 @@ function initMenu() {
         }
     });
 }
+document.addEventListener("DOMContentLoaded", () => {
+    const blobs = document.querySelectorAll(".blob");
+    const container = document.querySelector("section"); // Contenedor donde se mueven los blobs
+
+    function moveBlob(blob) {
+        const containerRect = container.getBoundingClientRect();
+        
+        const maxX = containerRect.width - blob.clientWidth;
+        const maxY = containerRect.height - blob.clientHeight;
+
+        const randomX = Math.random() * maxX;
+        const randomY = Math.random() * maxY;
+        const randomScale = 0.9 + Math.random() * 0.4; // Escala entre 0.9 y 1.3
+
+        blob.style.transition = "transform 4s ease-in-out";
+        blob.style.transform = `translate(${randomX}px, ${randomY}px) scale(${randomScale})`;
+
+        setTimeout(() => moveBlob(blob), 4000); // Se mueve cada 4 segundos
+    }
+
+    blobs.forEach((blob) => moveBlob(blob));
+});
+
